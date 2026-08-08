@@ -1,10 +1,13 @@
 {
-  "updated_at": "2026-08-08T17:08:49.705564+00:00",
-  "raw_count": 0,
-  "working_count": 0,
+  "updated_at": "2026-08-08T17:14:13.709838+00:00",
+  "raw_count": 13,
+  "working_count": 2,
   "by_protocol": {
-    "socks4": 0,
+    "socks4": 2,
     "socks5": 0
   },
-  "by_source": {}
+  "by_source": {
+    "proxyscrape": 1,
+    "geonode": 1
+  }
 }

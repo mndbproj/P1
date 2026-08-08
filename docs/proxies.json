@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "ip": "185.142.156.229",
+    "port": 2080,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "proxyscrape",
+    "latency_ms": 1182,
+    "checked_at": "2026-08-08T17:14:06.602167+00:00"
+  },
+  {
+    "ip": "80.191.40.133",
+    "port": 5678,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geonode",
+    "latency_ms": 2026,
+    "checked_at": "2026-08-08T17:14:07.450383+00:00"
+  }
+]

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>IR SOCKS Proxies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 3rem auto; padding: 0 1rem; color: #222; }
+  code, pre { background: #f4f4f4; padding: .2rem .4rem; border-radius: 4px; }
+  pre { padding: 1rem; overflow-x: auto; }
+  a { color: #0b5fff; }
+</style>
+</head>
+<body>
+  <h1>Iran SOCKS proxy feed</h1>
+  <p>Auto-refreshed by GitHub Actions. Two subscription links, always pointing at the latest data:</p>
+  <ul>
+    <li><a href="proxies.json">proxies.json</a> — full JSON, one object per working proxy</li>
+    <li><a href="socks.txt">socks.txt</a> — plain text, one <code>protocol://ip:port</code> per line</li>
+    <li><a href="meta.json">meta.json</a> — last-updated time and counts</li>
+  </ul>
+  <p>Use it from Python:</p>
+  <pre>import requests
+
+url = "https://YOUR_USERNAME.github.io/YOUR_REPO/proxies.json"
+proxies = requests.get(url, timeout=10).json()
+p = proxies[0]
+proxy_url = f"{p['protocol']}://{p['ip']}:{p['port']}"
+
+r = requests.get("https://httpbin.org/ip",
+                  proxies={"http": proxy_url, "https": proxy_url},
+                  timeout=8)
+print(r.json())</pre>
+  <p>Source: <a href="https://github.com/">this repo</a>.</p>
+</body>
+</html>

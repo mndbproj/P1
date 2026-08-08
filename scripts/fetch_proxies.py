@@ -5,14 +5,23 @@ public proxy-list sources. Each source is best-effort and wrapped so that
 one source failing (rate limit, layout change, downtime) never kills the run.
 
 Sources:
-  1. ProxyScrape  - real JSON/text API, most reliable. (primary)
-  2. Geonode       - real JSON API, second most reliable.
-  3. Geonix        - HTML table scrape (free.geonix.com).
-  4. Spys.one      - HTML scrape, BEST EFFORT ONLY. Spys.one obfuscates port
+  1. ProxyScrape  - real text API, most reliable. (primary)
+  2. Geonode       - real JSON API, best-effort (endpoint moves around).
+  3. Proxifly      - real JSON file per country, hosted on GitHub + jsDelivr
+                      CDN, refreshed every 5 minutes. Very reliable.
+  4. monosans/proxy-list - real JSON file (all countries/protocols in one
+                      file, filtered locally), hosted on GitHub, refreshed
+                      hourly. Very reliable.
+  5. Geonix        - HTML table scrape (free.geonix.com).
+  6. Spys.one      - HTML scrape, BEST EFFORT ONLY. Spys.one obfuscates port
                       numbers with per-page JavaScript, so this only works
                       when the page happens to use one of the encoding
                       patterns we know how to reverse. If it returns nothing,
                       that's expected sometimes -- see README for why.
+
+Nothing here filters proxies out by "does it work" -- that's a deliberate
+choice, see check_proxies.py and main.py. This module only de-duplicates
+identical (ip, port, protocol) entries seen from more than one source.
 
 Output: a flat, de-duplicated list of proxy dicts written to stdout as JSON
 (the caller decides what to do with it -- see main.py).
@@ -106,7 +115,47 @@ def fetch_geonode() -> Iterable[Proxy]:
 
 
 # ---------------------------------------------------------------------------
-# Source 3: Geonix (plain HTML table scrape)
+# Source 3: Proxifly (real JSON file per country, via jsDelivr CDN mirror of
+# github.com/proxifly/free-proxy-list, refreshed every 5 minutes)
+# ---------------------------------------------------------------------------
+def fetch_proxifly() -> Iterable[Proxy]:
+    url = "https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/countries/IR/data.json"
+    resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    resp.raise_for_status()
+    data = resp.json()
+    for item in data:
+        proto = str(item.get("protocol", "")).lower()
+        ip = item.get("ip")
+        port = item.get("port")
+        if proto in ("socks4", "socks5") and ip and port:
+            yield Proxy(ip=ip, port=int(port), protocol=proto, source="proxifly")
+
+
+# ---------------------------------------------------------------------------
+# Source 4: monosans/proxy-list (real JSON, all countries/protocols in one
+# file on GitHub, refreshed hourly; we filter to IR + socks4/socks5 locally)
+# ---------------------------------------------------------------------------
+def fetch_monosans() -> Iterable[Proxy]:
+    url = "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies.json"
+    resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    resp.raise_for_status()
+    data = resp.json()
+    for item in data:
+        proto = str(item.get("protocol", "")).lower()
+        if proto not in ("socks4", "socks5"):
+            continue
+        geo = item.get("geolocation") or {}
+        country = (geo.get("country") or {}).get("iso_code")
+        if country != "IR":
+            continue
+        ip = item.get("host")
+        port = item.get("port")
+        if ip and port:
+            yield Proxy(ip=ip, port=int(port), protocol=proto, source="monosans")
+
+
+# ---------------------------------------------------------------------------
+# Source 5: Geonix (plain HTML table scrape)
 # ---------------------------------------------------------------------------
 def fetch_geonix() -> Iterable[Proxy]:
     from bs4 import BeautifulSoup
@@ -135,7 +184,7 @@ def fetch_geonix() -> Iterable[Proxy]:
 
 
 # ---------------------------------------------------------------------------
-# Source 4: Spys.one -- BEST EFFORT ONLY, see module docstring.
+# Source 6: Spys.one -- BEST EFFORT ONLY, see module docstring.
 # Spys.one XORs each port digit against a per-page JS variable table, so a
 # plain-requests scrape can only recover proxies on the occasions the page
 # ships port digits in cleartext spans (which happens for a subset of rows).
@@ -168,10 +217,20 @@ def fetch_spys_one() -> Iterable[Proxy]:
             yield Proxy(ip=ip, port=int(port), protocol=proto, source="spys.one")
 
 
-SOURCES = [fetch_proxyscrape, fetch_geonode, fetch_geonix, fetch_spys_one]
+SOURCES = [
+    fetch_proxyscrape,
+    fetch_geonode,
+    fetch_proxifly,
+    fetch_monosans,
+    fetch_geonix,
+    fetch_spys_one,
+]
 
 
 def fetch_all() -> list[Proxy]:
+    """De-duplicates identical (ip, port, protocol) tuples seen from more
+    than one source. This is the ONLY thing that removes an entry -- every
+    proxy any source reports is kept in the output, working or not."""
     seen: dict[tuple, Proxy] = {}
     for src in SOURCES:
         for proxy in _safe(src):

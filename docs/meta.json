@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T10:18:52.476222+00:00",
+  "updated_at": "2026-08-09T14:06:35.857462+00:00",
   "total_count": 15,
   "alive_count": 0,
   "by_protocol": {
@@ -8,8 +8,8 @@
   },
   "by_source": {
     "geonode": 7,
-    "monosans": 3,
+    "monosans": 4,
     "proxifly": 3,
-    "proxyscrape": 2
+    "proxyscrape": 1
   }
 }

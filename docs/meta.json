@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-26T08:11:28.818304+00:00",
-  "total_count": 47,
+  "updated_at": "2026-08-26T10:57:04.145376+00:00",
+  "total_count": 44,
   "alive_count": 4,
   "by_protocol": {
     "socks4": 27,
-    "socks5": 20
+    "socks5": 17
   },
   "by_source": {
-    "proxyscrape": 5,
-    "monosans": 1,
-    "geonode": 6,
-    "proxifly": 2,
-    "geo-filtered": 33
+    "geo-filtered": 30,
+    "monosans": 4,
+    "proxyscrape": 1,
+    "geonode": 7,
+    "proxifly": 2
   }
 }

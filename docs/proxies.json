@@ -1,23 +1,23 @@
 [
   {
-    "ip": "78.38.67.95",
-    "port": 4153,
+    "ip": "81.29.249.82",
+    "port": 5071,
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:04.077036+00:00",
+    "checked_at": "2026-09-16T02:34:52.839552+00:00",
     "alive": true,
-    "latency_ms": 993
+    "latency_ms": 1909
   },
   {
-    "ip": "81.29.249.82",
-    "port": 5071,
-    "protocol": "socks5",
+    "ip": "78.38.67.210",
+    "port": 3636,
+    "protocol": "socks4",
     "country": "IR",
-    "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.672641+00:00",
+    "source": "monosans",
+    "checked_at": "2026-09-16T02:34:52.862499+00:00",
     "alive": true,
-    "latency_ms": 1060
+    "latency_ms": 1918
   },
   {
     "ip": "194.31.108.109",
@@ -25,29 +25,59 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.670063+00:00",
+    "checked_at": "2026-09-16T02:34:52.840505+00:00",
     "alive": true,
-    "latency_ms": 1111
+    "latency_ms": 2563
+  },
+  {
+    "ip": "62.60.210.173",
+    "port": 1080,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.838483+00:00",
+    "alive": true,
+    "latency_ms": 2790
+  },
+  {
+    "ip": "31.59.170.18",
+    "port": 1080,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "proxifly",
+    "checked_at": "2026-09-16T02:34:52.857590+00:00",
+    "alive": true,
+    "latency_ms": 4614
   },
   {
     "ip": "81.29.249.82",
     "port": 5071,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "proxifly",
+    "checked_at": "2026-09-16T02:34:52.841437+00:00",
+    "alive": true,
+    "latency_ms": 5035
+  },
+  {
+    "ip": "217.60.245.29",
+    "port": 4080,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "proxifly",
+    "checked_at": "2026-09-16T02:34:52.856810+00:00",
+    "alive": true,
+    "latency_ms": 5104
+  },
+  {
+    "ip": "87.107.68.231",
+    "port": 1081,
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.671024+00:00",
+    "checked_at": "2026-09-16T02:34:53.026164+00:00",
     "alive": true,
-    "latency_ms": 1777
-  },
-  {
-    "ip": "217.60.71.57",
-    "port": 1080,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.684198+00:00",
-    "alive": true,
-    "latency_ms": 15133
+    "latency_ms": 7303
   },
   {
     "ip": "213.176.116.119",
@@ -55,7 +85,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.685345+00:00",
+    "checked_at": "2026-09-16T02:34:52.855499+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -65,7 +95,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.686016+00:00",
+    "checked_at": "2026-09-16T02:34:52.856184+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -75,7 +105,27 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.676147+00:00",
+    "checked_at": "2026-09-16T02:34:52.847411+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "185.60.59.245",
+    "port": 10808,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geonode",
+    "checked_at": "2026-09-16T02:34:52.846621+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "89.44.241.98",
+    "port": 1080,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.845291+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -85,27 +135,7 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.675428+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "89.44.241.98",
-    "port": 1080,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.678501+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "185.60.59.245",
-    "port": 10808,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.680193+00:00",
+    "checked_at": "2026-09-16T02:34:52.848349+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -115,7 +145,17 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.681036+00:00",
+    "checked_at": "2026-09-16T02:34:52.844501+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "185.211.59.126",
+    "port": 10808,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.865744+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -125,7 +165,17 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.676728+00:00",
+    "checked_at": "2026-09-16T02:34:52.842371+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "87.107.184.182",
+    "port": 8080,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.989578+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -135,17 +185,27 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.679071+00:00",
+    "checked_at": "2026-09-16T02:34:52.843108+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "62.60.210.173",
-    "port": 1080,
+    "ip": "62.60.146.250",
+    "port": 3001,
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.878856+00:00",
+    "checked_at": "2026-09-16T02:34:53.045186+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "81.91.157.133",
+    "port": 5678,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "proxygenerator-stable",
+    "checked_at": "2026-09-16T02:34:52.863188+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -155,7 +215,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:04.781309+00:00",
+    "checked_at": "2026-09-16T02:34:53.252422+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -165,7 +225,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:05.070058+00:00",
+    "checked_at": "2026-09-16T02:34:53.605063+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -175,7 +235,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:05.448369+00:00",
+    "checked_at": "2026-09-16T02:34:54.780164+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -185,7 +245,17 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:05.662862+00:00",
+    "checked_at": "2026-09-16T02:34:54.984244+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "85.133.169.45",
+    "port": 8118,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.867235+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -195,37 +265,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.681766+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "80.191.40.131",
-    "port": 5678,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.677274+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "87.107.68.231",
-    "port": 1081,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.674846+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "81.12.89.74",
-    "port": 4153,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "proxyscrape",
-    "checked_at": "2026-09-15T23:23:03.673372+00:00",
+    "checked_at": "2026-09-16T02:34:52.853916+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -235,7 +275,47 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.679591+00:00",
+    "checked_at": "2026-09-16T02:34:52.849114+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "5.144.133.195",
+    "port": 9050,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "proxifly",
+    "checked_at": "2026-09-16T02:34:52.845946+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "78.38.67.95",
+    "port": 4153,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "proxifly",
+    "checked_at": "2026-09-16T02:34:52.853209+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "80.191.40.131",
+    "port": 5678,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.850433+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "87.107.68.231",
+    "port": 1081,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geonode",
+    "checked_at": "2026-09-16T02:34:52.849801+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -245,7 +325,7 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.682339+00:00",
+    "checked_at": "2026-09-16T02:34:52.851183+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -255,27 +335,17 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.682918+00:00",
+    "checked_at": "2026-09-16T02:34:52.851855+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "87.107.68.231",
-    "port": 1081,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.683498+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "46.224.153.114",
-    "port": 9050,
+    "ip": "217.60.71.57",
+    "port": 1080,
     "protocol": "socks5",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.684799+00:00",
+    "checked_at": "2026-09-16T02:34:52.852531+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -285,77 +355,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.687883+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "31.57.28.179",
-    "port": 4433,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.688430+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "95.81.98.30",
-    "port": 10808,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.690696+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "80.191.40.130",
-    "port": 5678,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.693501+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "94.183.233.251",
-    "port": 1080,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.689628+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "2.188.210.83",
-    "port": 4443,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.694704+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "217.66.207.3",
-    "port": 33333,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.692825+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "79.127.30.250",
-    "port": 8080,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.691359+00:00",
+    "checked_at": "2026-09-16T02:34:52.858339+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -365,67 +365,57 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.689063+00:00",
+    "checked_at": "2026-09-16T02:34:52.859796+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "2.184.51.130",
-    "port": 10800,
+    "ip": "31.57.28.179",
+    "port": 4433,
     "protocol": "socks5",
     "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.690142+00:00",
+    "source": "proxifly",
+    "checked_at": "2026-09-16T02:34:52.859125+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "31.7.65.18",
-    "port": 443,
-    "protocol": "socks4",
+    "ip": "95.81.98.30",
+    "port": 10808,
+    "protocol": "socks5",
     "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.694158+00:00",
+    "source": "proxifly",
+    "checked_at": "2026-09-16T02:34:52.861876+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "31.59.170.18",
+    "ip": "94.183.233.251",
     "port": 1080,
     "protocol": "socks5",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.687310+00:00",
+    "checked_at": "2026-09-16T02:34:52.860538+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "80.191.40.41",
+    "ip": "217.219.162.114",
     "port": 5678,
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.824007+00:00",
+    "checked_at": "2026-09-16T02:34:52.863842+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "178.252.165.226",
-    "port": 1080,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "geonode",
-    "checked_at": "2026-09-15T23:23:03.674114+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "217.219.83.186",
-    "port": 2222,
+    "ip": "217.66.207.3",
+    "port": 33333,
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.867730+00:00",
+    "checked_at": "2026-09-16T02:34:52.865047+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -435,67 +425,27 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.870152+00:00",
+    "checked_at": "2026-09-16T02:34:52.865944+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "5.144.133.195",
+    "ip": "46.224.153.114",
     "port": 9050,
     "protocol": "socks5",
     "country": "IR",
     "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.677850+00:00",
+    "checked_at": "2026-09-16T02:34:52.854767+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "93.126.6.68",
-    "port": 3128,
+    "ip": "80.191.40.41",
+    "port": 5678,
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.871859+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "89.46.219.130",
-    "port": 8080,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.871013+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "62.60.210.173",
-    "port": 1080,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.671916+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "185.212.195.34",
-    "port": 8085,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.896109+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "78.38.89.188",
-    "port": 9090,
-    "protocol": "socks4",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.692104+00:00",
+    "checked_at": "2026-09-16T02:34:52.988505+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -505,57 +455,17 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.820632+00:00",
+    "checked_at": "2026-09-16T02:34:53.024482+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "213.207.195.178",
+    "ip": "79.127.30.250",
     "port": 8080,
-    "protocol": "socks5",
+    "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:04.509576+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "193.151.130.114",
-    "port": 8086,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:04.733169+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "37.235.20.148",
-    "port": 8080,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:05.159173+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "46.209.54.102",
-    "port": 8080,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:05.280817+00:00",
-    "alive": false,
-    "latency_ms": null
-  },
-  {
-    "ip": "31.214.171.62",
-    "port": 3128,
-    "protocol": "socks5",
-    "country": "IR",
-    "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:05.867969+00:00",
+    "checked_at": "2026-09-16T02:34:53.030985+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -565,17 +475,87 @@
     "protocol": "socks4",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:03.695361+00:00",
+    "checked_at": "2026-09-16T02:34:53.036009+00:00",
     "alive": false,
     "latency_ms": null
   },
   {
-    "ip": "217.60.245.29",
-    "port": 4080,
+    "ip": "178.252.165.226",
+    "port": 1080,
     "protocol": "socks5",
     "country": "IR",
-    "source": "proxifly",
-    "checked_at": "2026-09-15T23:23:03.686741+00:00",
+    "source": "geonode",
+    "checked_at": "2026-09-16T02:34:52.843843+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "94.182.177.92",
+    "port": 80,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:53.055158+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "81.12.89.74",
+    "port": 4153,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:53.176808+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "213.207.195.178",
+    "port": 8080,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:53.212302+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "193.151.130.114",
+    "port": 8086,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:53.226813+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "37.235.20.148",
+    "port": 8080,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:53.807675+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "46.209.54.102",
+    "port": 8080,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:54.748418+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "31.214.171.62",
+    "port": 3128,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:55.197280+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -585,7 +565,7 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:11.135923+00:00",
+    "checked_at": "2026-09-16T02:34:55.403502+00:00",
     "alive": false,
     "latency_ms": null
   },
@@ -595,7 +575,37 @@
     "protocol": "socks5",
     "country": "IR",
     "source": "geo-filtered",
-    "checked_at": "2026-09-15T23:23:11.681914+00:00",
+    "checked_at": "2026-09-16T02:34:55.628242+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "93.126.6.68",
+    "port": 3128,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.864431+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "89.46.219.130",
+    "port": 8080,
+    "protocol": "socks4",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:53.027103+00:00",
+    "alive": false,
+    "latency_ms": null
+  },
+  {
+    "ip": "2.184.51.130",
+    "port": 10800,
+    "protocol": "socks5",
+    "country": "IR",
+    "source": "geo-filtered",
+    "checked_at": "2026-09-16T02:34:52.861176+00:00",
     "alive": false,
     "latency_ms": null
   }

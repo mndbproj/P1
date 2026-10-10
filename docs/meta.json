@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-10T11:41:17.264978+00:00",
-  "total_count": 76,
-  "alive_count": 5,
+  "updated_at": "2026-10-10T16:42:32.664724+00:00",
+  "total_count": 71,
+  "alive_count": 4,
   "by_protocol": {
-    "socks4": 20,
+    "socks4": 15,
     "socks5": 56
   },
   "by_source": {
-    "proxifly": 50,
-    "geonode": 12,
-    "geo-filtered": 14
+    "proxifly": 47,
+    "geo-filtered": 12,
+    "geonode": 12
   }
 }
